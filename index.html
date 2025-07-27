@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utility.css">
+</head>
+<body class="bg-black">
+  <div class="container flex">
+    <!-- Left Sidebar -->
+    <div class="left bg-gray rounded m1 p1" style="width: 25vw; min-width: 200px;">
+      <!-- Logo -->
+      <img src="assets/logo.svg" alt="Spotify Logo" class="logo m1">
+      
+      <!-- Home Navigation -->
+      <div class="home bg-gray rounded m1 p1">
+        <ul>
+          <li class="flex gap-10 align-center">
+            <img src="assets/home.svg" class="invert" width="20"> Home
+          </li>
+          <li class="flex gap-10 align-center">
+            <img src="assets/search.svg" class="invert" width="20"> Search
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Library Section -->
+      <div class="library bg-gray rounded m1 p1">
+        <div class="heading flex align-center gap-10">
+          <img src="assets/playlist.svg" class="invert" width="20">
+          <h2>Your Library</h2>
+        </div>
+        <div class="song-list">
+          <ul>
+            <!-- Songs will be loaded by JavaScript -->
+          </ul>
+        </div>
+        <footer class="footer flex gap-10" style="font-size:10px;color:gray;">
+          <a href="#">Legal</a>
+          <a href="#">Privacy</a>
+          <span>English</span>
+        </footer>
+      </div>
+    </div>
+    
+    <!-- Right Main Content -->
+    <div class="right bg-black rounded m1 p1" style="width: 75vw;">
+      <!-- Header -->
+      <header class="header flex justify-center align-center gap-10">
+        <button class="sign-up-btn">Sign Up</button>
+        <button class="login-btn">Log In</button>
+      </header>
+      
+      <!-- Spotify Playlists Section -->
+      <section class="spotify-playlist">
+        <h1>Spotify Playlists</h1>
+        <div class="card-container flex gap-10 scrollbar-dark" style="overflow-y:scroll;max-height:70vh;">
+          <!-- Playlist cards will be loaded by JavaScript -->
+        </div>
+      </section>
+      
+      <!-- Player Bar -->
+      <div class="play-bar bg-gray flex align-center gap-10" style="position:absolute;bottom:0;width:90%;padding:12px;">
+        <img class="player-cover" src="https://via.placeholder.com/48x48?text=Cover" width="48" height="48" style="border-radius:6px;object-fit:cover;">
+        <div class="song-info flex gap-10" style="flex-direction:column;">
+          <span class="player-title" style="font-weight:600;">Song Name</span>
+          <span class="player-artist" style="font-size:12px;opacity:0.7;">Artist</span>
+        </div>
+        <div class="song-buttons flex gap-10">
+          <img class="prev-btn cursor-pointer" src="assets/prev.svg" width="24">
+          <img class="play-btn cursor-pointer" src="assets/play.svg" width="32">
+          <img class="next-btn cursor-pointer" src="assets/next.svg" width="24">
+        </div>
+        <div class="progress-bar" style="flex:1;height:8px;background:#f0eded;border-radius:4px;position:relative;cursor:pointer;max-width:300px;min-width:120px;">
+          <div class="progress-fill" style="height:100%;background:#1db954;border-radius:4px;width:0%;position:absolute;top:0;left:0;"></div>
+        </div>
+        <div class="song-time flex gap-10">
+          <span class="current-time">0:00</span> / <span class="duration-time">0:00</span>
+        </div>
+        <audio></audio>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 

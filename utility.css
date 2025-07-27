@@ -1,0 +1,53 @@
+/* Utility classes for Spotify clone */
+
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.bg-black {
+  background-color: #000;
+  color: #fff;
+}
+.bg-gray {
+  background-color: #121212;
+  color: #fff;
+}
+.rounded {
+  border-radius: 8px;
+}
+.m1 {
+  margin: 8px;
+}
+.p1 {
+  padding: 10px;
+}
+.invert {
+  filter: invert(1);
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-15 {
+  gap: 15px;
+}
+.gap-34 {
+  gap: 34px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.scrollbar-dark::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
+}
+.scrollbar-dark::-webkit-scrollbar-track {
+  background: #111;
+} 
